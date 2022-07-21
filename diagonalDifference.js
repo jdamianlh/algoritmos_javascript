@@ -18,7 +18,7 @@ For example, the square matrix  arr is shown below:
   int arr[n][m]: an array of integers
  */
 
-  const arr = [[1,2,3,4], [4,5,6,2], [9,8,9,1], [8,3,6,5]]
+  const arr = [[1,2,3], [4,5,6], [9,8,9]]
   let cl = 0
   let cr = 0
   let sumaleft = 0
@@ -55,13 +55,16 @@ For example, the square matrix  arr is shown below:
         }
     }
   }
-  difference = (sumaleft-sumaright)*-1
   
-  return difference
+  difference = (sumaleft-sumaright)
+  
+  if(difference<0){
+    console.log('hola')
+      difference = (sumaleft-sumaright) * -1
+  }
 
 
-//   console.log(sumaleft)
- 
-//   console.log(sumaright)
-//   console.log(difference)
+  console.log(sumaleft)
+  console.log(sumaright)
+  console.log(difference)
 
