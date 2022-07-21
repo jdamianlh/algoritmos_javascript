@@ -1,3 +1,21 @@
+/*
+
+this is range view algorithm
+given a number for example 123213 the first number on the left: 1 has one of vision on his
+right and one on his left so he can only see 2 on his right but nothing on his left,
+the second: 2 
+hast two range of vision on his right so he can see 3 and 2 and on his left onlye can see 1
+
+1: only see 2 = 2
+2: on his right 3, 2 . on his left 1 = 3+2+1
+3: on his right 2, 1, 3 . on his left 2, 1 = 2+1+3+2+1
+2: on his right 1, 3 . on his left 3, 2  = 1+3+3+2
+1: on his right 1 . on his left 3 = 1 +3
+1: on his right nothing . on his left 1, 2, 3 = 1+2+3
+
+*/
+
+
 
 const rangeViewNumber = (num) => {
 
