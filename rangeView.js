@@ -5,6 +5,8 @@ const rangeViewNumber = (num) => {
     console.log(arreglo)
     let valor = []
     let suma = 0
+    let menor = 0
+    let repite = 0;
 
     for(let i=0;i<arreglo.length;i++){
 
@@ -47,8 +49,22 @@ const rangeViewNumber = (num) => {
     }
     console.table(valor)
 
+    for(let cont=0;cont<valor.length;cont++){
+        if(valor[cont+1]< valor[cont]){
+            menor = valor[cont+1]
+        }
+        
+    }
+    for(let cont=0;cont<valor.length;cont++){
+        if(valor[cont] === menor){
+            repite+=1
+        }
+    }
+    if(repite>=2)
+    return true
+    console.log(repite)
 }
 
-rangeViewNumber(212121)
+console.log(rangeViewNumber(342213))
 // rangeViewNumber(342213)
 
