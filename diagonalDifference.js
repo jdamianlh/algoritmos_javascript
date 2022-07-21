@@ -30,14 +30,11 @@ For example, the square matrix  arr is shown below:
 
     for(let c=0; c<arr.length;c++){
 
-        if(arr[i][c]!== undefined){
             if(cr<arr.length){
                 sumaleft+=arr[cr][cl]
+                cl+=1
+                cr+=1
             }
-            cl+=1
-            cr+=1
-        }
-        
     }
   }
   cr=0
@@ -45,14 +42,12 @@ For example, the square matrix  arr is shown below:
   for(let i = arr.length-1; i>=0; i--){
     for(let c= arr.length-1; c>=0; c--){
 
-        if(arr[i][c]!==undefined){
             if(cr<arr.length){
                 sumaright+=arr[cr][cl]
+                cr++
+                cl--
             }
-            cr++
-            cl--
             
-        }
     }
   }
   
