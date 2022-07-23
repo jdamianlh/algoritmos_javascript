@@ -35,8 +35,6 @@
 const ar = [1000000001, 1000000002, 1000000003, 1000000004, 1000000005]
 let suma = 0
 
-for(let cont = 0; cont < ar.length; cont++){
-    suma += ar[cont]
-}
+let arreglo = ar.reduce((a,b) => a+b, 0)
 
-console.log(suma)
+console.log(arreglo)
