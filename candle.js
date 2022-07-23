@@ -18,7 +18,7 @@ Returns
 
 int: the number of candles that are tallest
 */
-let candles = [4,4,1,3]
+let candles = [2,3,1,3]
 
 candles.sort((a,b)=> a-b)
 
@@ -26,8 +26,7 @@ candles.sort((a,b)=> a-b)
 
 let ultimo = candles[candles.length-1]
 
-const index = candles.findIndex(num => num === ultimo)
+const arr = candles.filter(num => num === ultimo)
 
-let cantidad = candles.slice(index)
 
-console.log(cantidad.length)
+console.log(arr.length)
